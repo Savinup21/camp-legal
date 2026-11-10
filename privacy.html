@@ -20,7 +20,7 @@
 
 <h2>The short version</h2>
 <ul>
-  <li>Camp works without an account. Everything you enter stays on your phone unless you sign in with Apple to back it up.</li>
+  <li>Camp works without an account. Everything you enter stays on your phone unless you sign in (with Apple or Google) to back it up.</li>
   <li>No ads, no tracking, no data sold. We don't use the advertising identifier (IDFA) and we don't ask to track you.</li>
   <li>You can delete your account and all of its data inside the app at any time (Settings → Delete account and data).</li>
 </ul>
@@ -32,7 +32,7 @@
   <tr><td>Daily check-ins: soreness, energy, pain area and severity</td><td>Same as above</td><td>To adjust each day's session</td></tr>
   <tr><td>Nutrition: food you log, an optional nutrition goal (age, height, sex, activity, optional target weight and timeline), logged cardio</td><td>Same as above</td><td>To show daily totals and ranges</td></tr>
   <tr><td>One body-weight number (optional)</td><td>Same as above</td><td>To size nutrition ranges. We keep only the current number, not a history.</td></tr>
-  <tr><td>Apple account identifier and the email Apple gives us (often a private relay address)</td><td>Only if you sign in with Apple</td><td>To identify your backup and restore it on a new phone</td></tr>
+  <tr><td>An account identifier and your sign-in email — from Apple (often a private relay address) or from Google</td><td>Only if you sign in</td><td>To identify your backup and restore it on a new phone</td></tr>
   <tr><td>Purchase status (subscription / Fight Pass)</td><td>When you buy or restore</td><td>To unlock Pro features</td></tr>
   <tr><td>Meal photos</td><td>Only when you use “photo estimate” and have agreed to it in the app</td><td>To estimate what's on the plate. Photos are not stored by us.</td></tr>
   <tr><td>App usage events (e.g. “session completed”), tied to a random install ID</td><td>While you use the app</td><td>To understand which features help athletes. Linked to your account only while you're signed in.</td></tr>
@@ -43,6 +43,7 @@
 <ul>
   <li><strong>Supabase</strong> (database and server functions, hosted in the United States) — stores your backup.</li>
   <li><strong>Apple</strong> — Sign in with Apple and in-app purchases.</li>
+  <li><strong>Google</strong> — Sign in with Google, if you choose it (we request your email only).</li>
   <li><strong>RevenueCat</strong> — manages subscription and purchase status.</li>
   <li><strong>OpenAI</strong> — receives a meal photo only when you use the photo estimate, to return an estimate. Photos are sent through our server and are not stored by us.</li>
   <li><strong>USDA FoodData Central</strong> and <strong>Open Food Facts</strong> — receive food search words or a scanned barcode only, never anything that identifies you.</li>
@@ -50,7 +51,7 @@
 <p>These providers process data on our behalf to run the features above. We don't sell or share your data for advertising.</p>
 
 <h2>How long we keep it</h2>
-<p>Your backup is kept until you delete it. Deleting your account (in the app) removes your training, check-in, nutrition and purchase records from our servers, disconnects Sign in with Apple, and removes the link between your account and usage events. Data on your phone is erased at the same time. Apple keeps its own purchase records under Apple's policies.</p>
+<p>Your backup is kept until you delete it. Deleting your account (in the app) removes your training, check-in, nutrition and purchase records from our servers, disconnects Sign in with Apple or Google, and removes the link between your account and usage events. Data on your phone is erased at the same time. Apple keeps its own purchase records under Apple's policies.</p>
 
 <h2>Children</h2>
 <p>Camp is for people aged 13 and over. We don't knowingly collect data from anyone under 13; the app stops onboarding if you tell us you're under 13. If you're under 18, use Camp with the involvement of a parent, guardian or coach. If you believe a child under 13 has used Camp, contact us and we'll delete the data.</p>
